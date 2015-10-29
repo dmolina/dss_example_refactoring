@@ -8,7 +8,7 @@ class  Customer {
 	private Vector<Rental> _rentals = new Vector<Rental>();
 	public Customer (String name){
 		_name = name;
-	};
+	}
 	public void addRental(Rental arg) {
 		_rentals.addElement(arg);
 	}
