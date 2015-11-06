@@ -48,5 +48,10 @@ public class CustomerTest {
 		assertTrue(result_c1.contains("Star Wars VII	6.0"));
 		assertTrue(result_c1.contains("Titanic	3.5"));
 	}
+	
+	@Test
+	public void testC1() {
+		assertFalse(c1.statement().equalsIgnoreCase(""));
+	}
 
 }
