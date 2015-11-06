@@ -41,7 +41,7 @@ public class CustomerTest {
 	
 	@Test
 	public void test() {
-		String result_c1 = c1.statement();
+		String result_c1 = c1.getBill();
 		System.out.println(result_c1);
 		assertTrue(result_c1.contains("Amount owed is 14.0"));
 		assertTrue(result_c1.contains("The King Lion	4.5"));
@@ -51,7 +51,7 @@ public class CustomerTest {
 	
 	@Test
 	public void testC1() {
-		assertFalse(c1.statement().equalsIgnoreCase(""));
+		assertFalse(c1.getBill().equalsIgnoreCase(""));
 	}
 
 }
